@@ -4,7 +4,7 @@
   font-weight: bold;
 }
 
-.button-wrapper {
+.start-button-wrapper {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   // font-family: "aileron";
@@ -13,7 +13,7 @@
   margin-bottom: 310px;
 }
 
-a {
+.start-button-wrapper a {
   font-size: 2rem;
   font-weight: 600;
   padding: 1rem 3rem;
@@ -21,18 +21,18 @@ a {
   text-transform: uppercase;
 }
 
-.btn {
+.start-button-wrapper .btn {
   text-decoration: none;
   border: 1px solid #ff65bd;
   position: relative;
   overflow: hidden;
 }
 
-.btn:hover {
+.start-button-wrapper .btn:hover {
   box-shadow: 1px 1px 25px 10px rgba(255, 101, 189, 0.4);
 }
 
-.btn:before {
+.start-button-wrapper .btn:before {
   content: '';
   position: absolute;
   top: 0;
@@ -48,6 +48,6 @@ a {
   transition: all 650ms;
 }
 
-.btn:hover:before {
+.start-button-wrapper .btn:hover:before {
   left: 100%;
 }

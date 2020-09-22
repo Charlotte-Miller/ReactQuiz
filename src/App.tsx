@@ -7,7 +7,7 @@ import { fetchQuestions } from './API';
 import QuestionCard from './components/QuestionCard';
 import Heading from './components/Heading';
 import StartButton from './components/StartButton';
-import ScoreQuestionRate from './components/ScoreQuestionRate';
+import ScoreAndQuestionRate from './components/ScoreAndQuestionRate';
 import Loading from './components/Loading';
 // types
 import { Difficulty, QuestionState } from './API';
@@ -94,13 +94,22 @@ const App: React.FC = () =>
 
       <Heading />
 
+      {/* loadind */}
+      {loading && <Loading />}
+
       {/* start button */}
       {(gameOver || userAnswers.length === TOTAL_QUESTION) && (
       <StartButton text={userAnswers.length === TOTAL_QUESTION ? 'Restart' : 'Start'} clickHandle={startTrivia} />
       )}
 
-      {/* loadind */}
-      {loading && <Loading />}
+      {/* score and question rate */}
+      {(!loading && !gameOver || userAnswers.length === TOTAL_QUESTION) && (
+      <ScoreAndQuestionRate
+        score={score}
+        questionNumber={number + 1}
+        totalQuestions={TOTAL_QUESTION}
+      />
+      )}
 
       {/* question display */}
       {!loading && !gameOver && (
@@ -120,14 +129,6 @@ const App: React.FC = () =>
           <button className="next" onClick={nextQuestion} type="button">
             Next Question
           </button>
-      )}
-      {/* score and question rate */}
-      {(!gameOver || userAnswers.length === TOTAL_QUESTION) && (
-      <ScoreQuestionRate
-        score={score}
-        questionNumber={number + 1}
-        totalQuestions={TOTAL_QUESTION}
-      />
       )}
 
     </div>

@@ -10,7 +10,7 @@ type Props =
 }
 
 const StartButton: React.FC<Props> = ({ text, clickHandle }: Props) => (
-  <div className="button-wrapper">
+  <div className="start-button-wrapper">
     <a
       onClick={clickHandle}
       href="#"

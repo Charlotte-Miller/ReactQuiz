@@ -29,7 +29,3 @@ body::before {
 
     height: 100vh;
 }
-
-.container>p {
-    color: #ffb400;
-}

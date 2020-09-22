@@ -61,30 +61,19 @@ $color-white: #fff;
   }
 }
 
-/* Reset */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .card {
   flex: initial;
-  position: relative;
-  height: 40rem;
-  width: 48rem;
+  height: 30rem;
+  width: 65rem;
   -moz-perspective: 200rem;
   perspective: 200rem;
-  margin: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 32px;
 
   &__side {
     height: 100%;
     transition: all 0.8s ease;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     -webkit-backface-visibility: hidden;
     /* We don't want to see the back part of the element. */
@@ -116,7 +105,7 @@ $color-white: #fff;
   // Front side of the card
   &__theme {
     @include absCenter;
-    top: 54%;
+    top: 50%;
     width: 90%;
     text-align: center;
   }
@@ -131,7 +120,7 @@ $color-white: #fff;
     font-size: 2.5rem;
 
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
   }
 
   &__title {

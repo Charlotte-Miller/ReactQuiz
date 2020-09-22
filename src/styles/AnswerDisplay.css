@@ -24,8 +24,8 @@
 }
 
 .answer-wrapper .btn {
-  --w: 300px;
-  --h: 45px;
+  --w: 62rem;
+  --h: 90px;
   position: relative;
   display: flex;
   width: var(--w);

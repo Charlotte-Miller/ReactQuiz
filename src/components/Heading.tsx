@@ -9,7 +9,7 @@ export default function Heading()
       EA
       <span className="flicker">C</span>
       T Q
-      <span className="flicker">U</span>
+      <span className="fast-flicker">U</span>
       <span className="flicker">IZ</span>
     </div>
   );

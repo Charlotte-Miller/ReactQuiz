@@ -289,7 +289,8 @@ The presentation website was down so I created this codepen to preview the spinn
     width: 80px;
     height: 60px;
     background: #353c39;
-    position: relative;
+    position: absolute;
+    margin-top: 360px;
     display: inline-block;
     overflow: hidden;
     text-indent: 100%;
