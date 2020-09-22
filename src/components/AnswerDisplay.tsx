@@ -12,49 +12,27 @@ type Props = {
   callback: (e: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
-let currentStyle = 0;
-
 const AnswerDisplay: React.FC<Props> = ({
   answers,
   userAnswer,
   callback,
 }: Props) => (
   <div className="answers-wrapper">
-    {answers.map((answer) =>
-    {
-      // change animation style of eacch answer's button
-      if (currentStyle > 4)
-      {
-        currentStyle = 0;
-      }
-      currentStyle += 1;
-
-      return (
-        <div key={answer}>
-          <button
-            disabled={!!userAnswer}
-            value={answer}
-            onClick={callback}
-            type="button"
-            className="answer-wrapper"
-          >
-            <div className={`btn style-${currentStyle}`}>
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-              <span dangerouslySetInnerHTML={{ __html: answer }} />
-            </div>
-          </button>
-        </div>
-      );
-    })}
+    {answers.map((answer) => (
+      <div key={answer}>
+        <button
+          disabled={!!userAnswer}
+          value={answer}
+          onClick={callback}
+          type="button"
+          className="answer"
+        >
+          <span className="answer__content" dangerouslySetInnerHTML={{ __html: answer }} />
+          <span className="answer__glitch" />
+          <span className="answer__label">r48</span>
+        </button>
+      </div>
+    ))}
   </div>
 );
 

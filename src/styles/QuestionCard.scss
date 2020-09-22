@@ -64,7 +64,7 @@ $color-white: #fff;
 .card {
   flex: initial;
   height: 30rem;
-  width: 65rem;
+  width: 35rem;
   -moz-perspective: 200rem;
   perspective: 200rem;
   margin-bottom: 5rem;
@@ -85,11 +85,11 @@ $color-white: #fff;
     box-shadow: 5px 5px 10px;
 
     &--front {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
     }
 
     &--back {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
       transform: rotateY(180deg);
     }
   }

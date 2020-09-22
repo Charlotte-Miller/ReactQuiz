@@ -8,15 +8,17 @@ type Props = {
   score: number;
 };
 
-const ScoreAndQuestionRate: React.FC<Props> = (
-  { questionNumber, totalQuestions, score }: Props,
-) => (
+const ScoreAndQuestionRate: React.FC<Props> = ({
+  questionNumber,
+  totalQuestions,
+  score,
+}: Props) => (
   <div className="score-question-rate-wrapper">
-    <a href="#" className="score-question-rate">
+    <div className="score-question-rate">
       {/* <span className="text">Text</span> */}
       <span className="flip-front">{`Score: ${score}`}</span>
       <span className="flip-back">{`Question: ${questionNumber}/${totalQuestions}`}</span>
-    </a>
+    </div>
   </div>
 );
 
