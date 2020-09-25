@@ -1,4 +1,7 @@
 .score-question-rate-wrapper {
+    position: absolute;
+    margin-top: 18rem;
+
     color: #313131;
     font-size: 2rem;
     font-weight: 600;
@@ -40,9 +43,9 @@
 }
 
 .score-question-rate .flip-front {
-    color: #fb8b24;
-    background-color: #0f4c5c;
-    border: 2px solid #313131;
+    color: #E4EED2;
+    background-color: #092D31;
+    border: 2px solid #05191b;
     -webkit-transform: rotateX(0deg) translateZ(25px);
     -ms-transform: rotateX(0deg) translateZ(25px);
     -o-transform: rotateX(0deg) translateZ(25px);
@@ -50,9 +53,9 @@
 }
 
 .score-question-rate .flip-back {
-    color: #0f4c5c;
-    background-color: #e36414;
-    border: 2px solid #313131;
+    color: #092D31;
+    background-color: #E4EED2;
+    border: 2px solid #05191b;
     -webkit-transform: rotateX(90deg) translateZ(25px);
     -ms-transform: rotateX(90deg) translateZ(25px);
     -o-transform: rotateX(90deg) translateZ(25px);
